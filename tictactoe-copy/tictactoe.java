@@ -35,6 +35,10 @@ public class tictactoe
         int col = Integer.parseInt(c);
         //System.out.println(row);
         //System.out.println(col);
+        if(!(comma.equals(","))){
+            System.out.println("Try Again.");
+            MakeMove();
+        }
         if(row > 3 || row < 0 || col > 3 || col < 0){
             System.out.println("Try Again.");
             MakeMove();
